@@ -10,6 +10,7 @@
 #lezioni .row > .right{
   width: 50%;
   float: left;
+  font-size: 15px;
 }
 #lezioni .row img {
   /* per centrare orizzontalmente */
@@ -61,33 +62,76 @@ img{
 }
 
 /*PARTE RESPONSIVE*/
+@media (min-width: 420px) and (max-width: 780px) {
+  .row{
+    width: 100%;
+  }
+  #lezioni h1{
+    width: 100%;
+  }
+  #lezioni .row > .left {
+    width: 46%;
+    
+  }
+  #lezioni .row > .right{
+    width: 48%;
+    margin-left: 4%;
+  }
+  #steps h1{
+    width: 100%;
+  }
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 30%;
+  }
+  #steps .row > .left,
+  #steps .row > .central{
+    margin-right: 4%;
+  }
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    width: 100%;
+  }
+  #why .row h1{
+    width: 100%;
+ }
+}
 @media (max-width: 419px) {
+  .row{
+    width: 98%;
+  }
   #lezioni .row > .left, .right{
        float: none;
-       width: 36%;
+       width: 98%;
        margin-right: 5%;
      }
      #lezioni{
        margin-left: 3%;
      }
      #lezioni .row > .right{
-       width: 36%;
+       width: 99%;
      }
      .row h1{
-       text-align: center;
        margin-left: 3%;
-       width: 30%;
+       width: 95%;
      }
      #steps .row > .left,
      #steps .row > .central,
      #steps .row > .right{
        float: none;
+       width: 92%;
        margin-left: 3%;
+     }
+     #why .row h1{
+       margin-left: 4%;
      }
      #why .row > .first,
      #why .row > .second,
      #why .row > .third{
-       width: 35%;
+       width: 96%;
        margin-left: 2%;
+  }
 }
-}
+
